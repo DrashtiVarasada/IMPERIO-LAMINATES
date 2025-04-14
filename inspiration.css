@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    height: 120px;
+    width: auto;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+
+  }
+  
+  .navbar-logo img {
+    height: 100px;
+    width: auto;
+  }
+  .navbar-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px; 
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    transition: color 0.3s ease;
+    font-size: 15px;
+  }
+  
+  .navbar-menu a i {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .navbar-menu a:hover {
+    color: #a37b2e;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar-icons .fa-search {
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+  }
+  .menu-circle {
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .menu-circle i {
+    font-size: 16px;
+    color: #000;
+  }
+  .img_first{
+    height: auto;
+    width: 1512px;
+  }
+.laminate-section
+{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    gap: 20px; 
+ }
+.box {
+    height: 400px;
+    flex-wrap: wrap; 
+    width: 22%;
+   
+}
+.box1-image{
+    background-image: url("https://www.imperioworld.com/public/img/gallery/decor-style-201.jpg");
+   background-size: cover;
+   height: 350px;
+   width:100%;
+}
+.box2-image{
+    background-image: url("https://www.imperioworld.com/public/img/gallery/decor-style-203.jpg");
+   background-size: cover;
+   height: 350px;
+   width:100%; 
+}
+.box3-image{
+    background-image: url("https://www.imperioworld.com/public/img/gallery/decor-style-209.jpg");
+   background-size: cover;
+   height: 350px;
+   width:100%; 
+}
+.box4-image{
+    background-image: url("https://www.imperioworld.com/public/img/gallery/decor-style-210.jpg");
+   background-size: cover;
+   height: 350px;
+   width:100%; 
+}
+.box5-image{
+    background-image: url("https://www.imperioworld.com/public/img/gallery/decor-style-212.jpg");
+   background-size: cover;
+   height: 350px;
+   width:100%; 
+}
+.box6-image{
+    background-image: url("https://www.imperioworld.com/public/img/gallery/decor-style-232.jpg");
+   background-size: cover;
+   height: 350px;
+   width:100%; 
+}
+.box7-image{
+    background-image: url("https://www.imperioworld.com/public/img/gallery/decor-style-236.jpg");
+   background-size: cover;
+   height: 350px;
+   width:100%; 
+}
+.box8-image{
+    background-image: url("https://www.imperioworld.com/public/img/gallery/decor-style-240.jpg");
+   background-size: cover;
+   height: 350px;
+   width:100%; 
+}
+.box9-image{
+    background-image: url("https://www.imperioworld.com/public/img/gallery/decor-style-214.jpg");
+   background-size: cover;
+   height: 350px;
+   width:100%;
+}
+.box10-image{
+    background-image: url("https://www.imperioworld.com/public/img/gallery/decor-style-217.jpg");
+   background-size: cover;
+   height: 350px;
+   width:100%; 
+}
+.box11-image{
+    background-image: url("https://www.imperioworld.com/public/img/gallery/decor-style-220.jpg");
+   background-size: cover;
+   height: 350px;
+   width:100%; 
+}
+.box12-image{
+    background-image: url("https://www.imperioworld.com/public/img/gallery/decor-style-224.jpg");
+   background-size: cover;
+   height: 350px;
+   width:100%; 
+}
+
+.footer {
+    background-color: #121212;
+    color: #ccc;
+    padding: 60px 40px 30px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .footer-left {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .footer-left h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left h2 span {
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .footer-left p {
+    max-width: 500px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #aaa;
+  }
+  
+  .footer-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .footer-contact h4 {
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .footer-contact p {
+    color: #ccc;
+    font-weight: 500;
+  }
+  
+  .footer-middle, .footer-right {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-middle h4,
+  .footer-right h4 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .footer-middle ul {
+    list-style: none;
+  }
+  
+  .footer-middle ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-middle ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-middle ul li a:hover {
+    color: #fff;
+  }
+  
+  .social-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: color 0.3s;
+  }
+  
+  .social-links a i {
+    font-size: 18px;
+  }
+  
+  .social-links a:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  .footer-bottom strong {
+    color: #fff;
+  }

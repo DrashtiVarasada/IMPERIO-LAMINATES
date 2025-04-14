@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    height: 120px;
+    width: auto;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+
+  }
+  
+  .navbar-logo img {
+    height: 100px;
+    width: auto;
+  }
+  
+  /* .subtext {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #333;
+  } */
+  
+  .navbar-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px; 
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    transition: color 0.3s ease;
+    font-size: 15px;
+  }
+  
+  .navbar-menu a i {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .navbar-menu a:hover {
+    color: #a37b2e;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar-icons .fa-search {
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+  }
+  .menu-circle {
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .menu-circle i {
+    font-size: 16px;
+    color: #000;
+  }
+  .crafting-section {
+    background-color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-left: 60px;
+  }
+  
+  .crafting-left {
+    flex: 1;
+    min-width: 350px;
+    max-width: 55%;
+  }
+  
+  .section-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .section-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  .benefits-list {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  .benefits-list li {
+    margin-bottom: 8px;
+    font-size: 18px;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .benefits-list li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: #444;
+  }
+  
+  .crafting-right {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+  }
+  
+  .experience-number {
+    font-size: 160px;
+    font-weight: bold;
+    color: transparent;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .experience-caption {
+    margin-top: -10px;
+    letter-spacing: 3px;
+    color: #bbb;
+    font-weight: 600;
+  }
+  footer {
+    background-color:black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap; /* Add this */
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    gap: 20px; 
+ }
+ .footer-container
+ {
+    height: 600px;
+    flex-wrap: wrap;
+    width: 32%;
+ }
+ .footer-box1{
+   text-align: left;
+    height: 350px;
+    width:100%;
+    padding-left: 100px;
+    padding-top: 50px;
+ }
+ .footer-box2
+ {
+    text-align: left;
+    padding-top: 70px;
+    padding-left: 100px;
+    margin-left: 150px;
+ }
+ .footer-box3{
+    text-align: left;
+    padding-top: 70px;
+ }
+ footer ul li a{
+    display: block;
+    color: grey;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 20px;
+    
+ }
+ footer ul li a:hover{
+    color: white ;
+    transition: color 0.1/ ease;
+ }
+ /* Medium Devices (Tablets, smaller laptops - Adjust breakpoint as needed: e.g., 1024px or 992px) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 20px; /* Reduce padding */
+    height: auto; /* Allow height to adjust if items wrap */
+    justify-content: space-around; /* Space out items more evenly if they wrap */
+    flex-wrap: wrap; /* Allow wrapping */
+  }
+
+  .navbar-logo img {
+    height: 80px; /* Smaller logo */
+  }
+
+  .navbar-menu {
+      flex-grow: 1; /* Allow menu to take space */
+      justify-content: center; /* Center menu */
+      padding: 10px 0; /* Add some vertical padding if it wraps */
+  }
+
+  .navbar-menu ul {
+    gap: 20px; /* Reduce gap */
+    justify-content: center; /* Keep centered */
+    flex-wrap: wrap; /* Allow menu items to wrap */
+  }
+
+  .crafting-section {
+    padding: 40px 30px; /* Adjust padding */
+    gap: 30px;
+  }
+
+  .crafting-left {
+    max-width: 60%; /* Allow text slightly more space */
+    min-width: 300px; /* Adjust min-width */
+  }
+
+  .crafting-right {
+    min-width: 200px; /* Adjust min-width */
+  }
+
+  .section-title {
+    font-size: 32px; /* Reduce title size */
+  }
+
+  .section-text,
+  .benefits-list li {
+    font-size: 17px; /* Adjust text size */
+  }
+
+  .experience-number {
+    font-size: 130px; /* Reduce number size */
+  }
+
+  .experience-caption {
+    font-size: 13px; /* Adjust caption size */
+    letter-spacing: 2px;
+  }
+
+  .footer-container {
+    /* Remove fixed height if previously set */
+    /* height: auto; */
+    width: 45%; /* Aim for roughly 2 columns */
+    max-width: 400px; /* Add a max-width */
+    padding: 20px; /* Add internal padding */
+     /* Reset conflicting styles from specific boxes */
+    margin: 0;
+    text-align: left;
+  }
+
+  .footer-box1, .footer-box2, .footer-box3 {
+      padding: 0;
+      margin: 0;
+      height: auto; /* Remove fixed height */
+      text-align: left; /* Ensure alignment */
+  }
+
+  footer {
+      padding: 40px 20px; /* Adjust overall footer padding */
+      justify-content: space-around;
+  }
+
+  footer a {
+      font-size: 18px; /* Slightly smaller links */
+  }
+}
+
+/* Small Devices (Portrait Tablets and Large Phones - Adjust breakpoint as needed: e.g., 768px) */
+@media (max-width: 768px) {
+   .navbar {
+        flex-direction: column; /* Stack navbar items */
+        height: auto; /* Allow height to adjust */
+        padding: 15px;
+   }
+   .navbar-logo {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 15px; /* Add bottom margin */
+   }
+    .navbar-logo img {
+        height: 70px; /* Even smaller logo */
+    }
+   .navbar-menu {
+        width: 100%; /* Make menu take full width */
+        justify-content: center; /* Center menu items */
+        margin-bottom: 15px; /* Add space below menu */
+        padding: 0;
+   }
+   .navbar-menu ul {
+        gap: 15px; /* Further reduce gap */
+        justify-content: center;
+   }
+    .navbar-icons {
+        justify-content: center; /* Center icons */
+        width: 100%;
+        gap: 25px; /* Increase gap slightly for centered layout */
+    }
+
+   .crafting-section {
+       padding: 30px 20px;
+       flex-direction: column; /* Stack sections vertically */
+       align-items: center; /* Center items */
+       text-align: center; /* Center text */
+   }
+
+   .crafting-left {
+       max-width: 100%; /* Allow full width */
+       min-width: unset; /* Remove min-width */
+       order: 1; /* Text first */
+   }
+
+   .crafting-right {
+       min-width: unset; /* Remove min-width */
+       order: 2; /* Number second */
+       margin-top: 20px; /* Add space above number */
+   }
+
+   .section-subtitle {
+       padding-left: 0; /* Remove left padding */
+   }
+
+   .section-title {
+       font-size: 28px;
+   }
+
+   .section-text,
+   .benefits-list li {
+       font-size: 16px;
+   }
+
+   .benefits-list {
+       display: inline-block; /* Keep list centered */
+       text-align: left; /* Align list text left */
+       padding-left: 0; /* Reset padding */
+       margin-top: 15px;
+       max-width: 90%; /* Prevent list from being too wide */
+   }
+
+   .benefits-list li {
+       padding-left: 15px; /* Adjust padding */
+       margin-bottom: 6px;
+   }
+
+   .benefits-list li::before {
+       left: 0; /* Position bullet */
+   }
+
+   .experience-number {
+       font-size: 100px; /* Further reduce number size */
+   }
+
+   .experience-caption {
+       font-size: 12px;
+       letter-spacing: 1.5px;
+   }
+
+   .footer-container {
+        width: 90%; /* Move towards 1 column */
+        max-width: 500px; /* Adjust max width */
+        text-align: center; /* Center footer text */
+   }
+
+   .footer-box1, .footer-box2, .footer-box3 {
+       text-align: center;
+   }
+
+   footer {
+        padding: 30px 15px;
+        justify-content: center; /* Center the single column */
+   }
+    footer a {
+        font-size: 16px;
+    }
+}
+
+/* Extra Small Devices (Phones - Adjust breakpoint as needed: e.g., 480px) */
+@media (max-width: 480px) {
+   .navbar {
+        padding: 10px;
+   }
+    .navbar-logo img {
+        height: 60px; /* Smallest logo */
+    }
+   .navbar-menu a {
+      font-size: 14px; /* Smaller menu text */
+   }
+
+   .crafting-section {
+       padding: 25px 15px;
+   }
+
+   .section-title {
+       font-size: 24px;
+   }
+   .section-subtitle {
+       font-size: 13px;
+   }
+
+   .section-text,
+   .benefits-list li {
+       font-size: 15px;
+   }
+
+   .experience-number {
+       font-size: 80px; /* Smallest number size */
+   }
+
+   .experience-caption {
+       font-size: 11px;
+       letter-spacing: 1px;
+       margin-top: -5px; /* Adjust spacing */
+   }
+
+   .benefits-list {
+       max-width: 100%; /* Allow full width */
+   }
+
+   .footer-container {
+        width: 100%; /* Full width */
+        padding: 15px;
+   }
+
+   footer {
+        padding: 20px 10px;
+   }
+    footer a {
+        font-size: 15px;
+    }
+}
