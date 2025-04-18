@@ -35,13 +35,6 @@ body {
     height: 100px;
     width: auto;
   }
-  
-  /* .subtext {
-    font-size: 10px;
-    letter-spacing: 2px;
-    color: #333;
-  } */
-  
   .navbar-menu ul {
     display: flex;
     list-style: none;
@@ -65,18 +58,18 @@ body {
     color: #a37b2e;
   }
   
-  .navbar-icons {
+  .icons {
     display: flex;
     align-items: center;
     gap: 20px;
   }
   
-  .navbar-icons .fa-search {
+  .icons .fa-search {
     font-size: 16px;
     color: #000;
     cursor: pointer;
   }
-  .menu-circle {
+  .circle {
     border: 1px solid #000;
     border-radius: 50%;
     padding: 10px;
@@ -88,7 +81,7 @@ body {
     cursor: pointer;
   }
   
-  .menu-circle i {
+  .circle i {
     font-size: 16px;
     color: #000;
   } 
@@ -157,7 +150,7 @@ body {
   transition: 0.5s;
   }
   .text h1:hover{
-    -webkit-text-stroke: 1px #ccd1d4; /* Stroke color and thickness */
+    -webkit-text-stroke: 1px #ccd1d4; 
     color: transparent;
   }
   .vision-section {
@@ -270,12 +263,12 @@ body {
   }
 
   
-  .made-in-india-section {
+  .contribute {
     background-color: #fff;
     padding: 80px 20px;
     font-family: 'Helvetica Neue', sans-serif;
   }
-  .made-in-india-container {
+  .contribute-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -285,7 +278,7 @@ body {
     margin: 0 auto;
   }
   
-  .india-image {
+  .contribute-image {
     flex: 1;
     min-width: 300px;
     display: flex;
@@ -294,18 +287,18 @@ body {
     width: 100%;
     height: 400px;
   }
-  .india-text {
+  .contribute-text {
     flex: 1;
     min-width: 320px;
     max-width: 600px;
   }
-  .india-text h2 {
+  .contribute-text h2 {
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 20px;
     color: #000;
   } 
-  .india-text p {
+  .contribute-text p {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
@@ -324,72 +317,72 @@ body {
     gap: 40px;
   }
   
-  .footer-left {
+  .left {
     flex: 2;
     min-width: 300px;
   }
   
-  .footer-left h2 {
+  .left h2 {
     color: #fff;
     font-size: 32px;
     margin-bottom: 20px;
   }
   
-  .footer-left h2 span {
+  .left h2 span {
     color: #fff;
     font-weight: 700;
   }
   
-  .footer-left p {
+  .left p {
     max-width: 500px;
     line-height: 1.6;
     margin-bottom: 30px;
     color: #aaa;
   }
   
-  .footer-contact {
+  .contact {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
   }
   
-  .footer-contact h4 {
+  .contact h4 {
     color: #fff;
     margin-bottom: 5px;
   }
   
-  .footer-contact p {
+  .contact p {
     color: #ccc;
     font-weight: 500;
   }
   
-  .footer-middle, .footer-right {
+  .middle, .right {
     flex: 1;
     min-width: 200px;
   }
   
-  .footer-middle h4,
-  .footer-right h4 {
+  .middle h4,
+  .right h4 {
     color: #fff;
     font-weight: 700;
     margin-bottom: 15px;
   }
   
-  .footer-middle ul {
+  .middle ul {
     list-style: none;
   }
   
-  .footer-middle ul li {
+  .middle ul li {
     margin-bottom: 10px;
   }
   
-  .footer-middle ul li a {
+  .middle ul li a {
     color: #aaa;
     text-decoration: none;
     transition: color 0.3s;
   }
   
-  .footer-middle ul li a:hover {
+  .middle ul li a:hover {
     color: #fff;
   }
   
@@ -411,7 +404,7 @@ body {
     color: #fff;
   }
   
-  .footer-bottom {
+  .bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -423,6 +416,234 @@ body {
     color: #aaa;
   }
   
-  .footer-bottom strong {
+  .bottom strong {
     color: #fff;
   }
+
+@media (max-width: 991.98px) {
+  .navbar {
+      padding: 15px 20px; 
+      height: auto; 
+      flex-wrap: wrap;
+      justify-content: center; 
+      gap: 15px;
+  }
+
+  .navbar-logo img {
+      height: 80px; 
+  }
+
+  .navbar-menu ul {
+      gap: 20px; 
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  .navbar-menu a {
+      font-size: 14px;
+  }
+
+  .icons {
+    order: 3;
+    margin-top: 10px; 
+  }
+
+  .section-title {
+      font-size: 36px;
+  }
+  
+  .text h1 {
+      font-size: 90px;
+  }
+
+  .vision-container,
+  .mission-container,
+  .contribute-container {
+      gap: 40px; 
+      flex-direction: column;
+      align-items: center;
+      text-align: center; 
+  }
+
+  .vision-image,
+  .mission-image,
+  .contribute-image {
+      max-width: 500px; 
+      margin-bottom: 20px; 
+  }
+
+  .vision-content,
+  .mission-text,
+  .contribute-text {
+      max-width: 100%; 
+      align-items: center; 
+  }
+
+  .mission-text {
+      order: 1;
+  }
+   .mission-image {
+      order: 2; 
+      height: auto;
+  }
+  .mission-image img {
+      max-height: 400px; 
+      height: auto;
+  }
+  .values-box {
+     position: relative; 
+     bottom: auto;
+     left: auto;
+     margin: 20px auto 0; 
+     max-width: 90%; 
+  }
+
+  .contribute-container {
+       flex-direction: column-reverse; 
+  }
+
+  .footer {
+      padding: 40px 20px 20px; 
+  }
+
+  .footer-container {
+      gap: 30px; 
+      justify-content: center; 
+      text-align: center; 
+  }
+
+  .left, .middle, .right {
+      flex-basis: 100%;
+      min-width: unset; 
+      max-width: 500px; 
+      margin: 0 auto; 
+  }
+
+  .left {
+      order: 1; 
+  }
+  .middle {
+      order: 2;
+  }
+   .right {
+      order: 3;
+  }
+
+  .contact {
+      justify-content: center; 
+  }
+
+  .social-links a {
+      justify-content: center; 
+  }
+  
+  .bottom {
+      justify-content: center;
+      text-align: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .navbar {
+      padding: 10px 15px; 
+      justify-content: space-between; 
+      flex-wrap: nowrap;
+  }
+
+  .navbar-logo {
+       margin-right: 0;
+       flex-grow: 1; 
+  }
+
+  .navbar-logo img {
+      height: 60px; 
+  }
+  .navbar-menu {
+      display: none; 
+  }
+  .icons {
+      gap: 15px; 
+      margin-top: 0; 
+      order: 0; 
+  }
+  .circle {
+      width: 35px;
+      height: 35px;
+      padding: 8px;
+  }
+   .circle i {
+      font-size: 14px;
+  }
+   .icons .fa-search {
+      font-size: 14px;
+  }
+
+  .about-section,
+  .vision-section,
+  .mission-section,
+  .contribute {
+      padding: 40px 15px; 
+  }
+
+  .section-title {
+      font-size: 30px; 
+  }
+  .vision-content h2,
+  .mission-text h2,
+  .contribute-text h2 {
+      font-size: 28px; 
+  }
+  .highlight {
+      font-size: 16px; 
+  }
+  .description,
+  .vision-content p,
+  .mission-text p,
+  .contribute-text p {
+      font-size: 15px; 
+  }
+
+  .text h1 {
+      font-size: 60px; 
+  }
+  
+  .values-box h3 {
+      font-size: 18px;
+  }
+  
+  .footer {
+      padding: 30px 15px 15px; 
+  }
+   .left h2 {
+      font-size: 26px; 
+  }
+   .left p {
+      font-size: 14px;
+  }
+   .middle h4, .right h4 {
+      font-size: 16px;
+   }
+   .middle ul li a, .social-links a {
+      font-size: 14px;
+   }
+    .bottom {
+      font-size: 13px;
+  }
+}
+@media (max-width: 575.98px) {
+  .section-title {
+      font-size: 26px;
+  }
+  .vision-content h2,
+  .mission-text h2,
+  .contribute-text h2 {
+      font-size: 24px;
+  }
+  .text h1 {
+      font-size: 45px; 
+  }
+  .navbar-logo img {
+      height: 50px; 
+  }
+  .icons {
+      gap: 10px; 
+  }
+}
