@@ -59,18 +59,18 @@ body {
     color: #a37b2e;
   }
   
-  .navbar-icons {
+  .icons {
     display: flex;
     align-items: center;
     gap: 20px;
   }
   
-  .navbar-icons .fa-search {
+  .icons .fa-search {
     font-size: 16px;
     color: #000;
     cursor: pointer;
   }
-  .menu-circle {
+  .circle {
     border: 1px solid #000;
     border-radius: 50%;
     padding: 10px;
@@ -82,7 +82,7 @@ body {
     cursor: pointer;
   }
   
-  .menu-circle i {
+  .circle i {
     font-size: 16px;
     color: #000;
   }
@@ -205,72 +205,72 @@ body {
     gap: 40px;
   }
   
-  .footer-left {
+  .left {
     flex: 2;
     min-width: 300px;
   }
   
-  .footer-left h2 {
+  .left h2 {
     color: #fff;
     font-size: 32px;
     margin-bottom: 20px;
   }
   
-  .footer-left h2 span {
+  .left h2 span {
     color: #fff;
     font-weight: 700;
   }
   
-  .footer-left p {
+  .left p {
     max-width: 500px;
     line-height: 1.6;
     margin-bottom: 30px;
     color: #aaa;
   }
   
-  .footer-contact {
+  .contact {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
   }
   
-  .footer-contact h4 {
+  .contact h4 {
     color: #fff;
     margin-bottom: 5px;
   }
   
-  .footer-contact p {
+  .contact p {
     color: #ccc;
     font-weight: 500;
   }
   
-  .footer-middle, .footer-right {
+  .middle, .right {
     flex: 1;
     min-width: 200px;
   }
   
-  .footer-middle h4,
-  .footer-right h4 {
+  .middle h4,
+  .right h4 {
     color: #fff;
     font-weight: 700;
     margin-bottom: 15px;
   }
   
-  .footer-middle ul {
+  .middle ul {
     list-style: none;
   }
   
-  .footer-middle ul li {
+  .middle ul li {
     margin-bottom: 10px;
   }
   
-  .footer-middle ul li a {
+  .middle ul li a {
     color: #aaa;
     text-decoration: none;
     transition: color 0.3s;
   }
   
-  .footer-middle ul li a:hover {
+  .middle ul li a:hover {
     color: #fff;
   }
   
@@ -292,7 +292,7 @@ body {
     color: #fff;
   }
   
-  .footer-bottom {
+  .bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -304,10 +304,9 @@ body {
     color: #aaa;
   }
   
-  .footer-bottom strong {
+  .bottom strong {
     color: #fff;
   }
-/* Medium Devices (Tablets) */
 @media (max-width: 1024px) {
   .navbar {
     flex-wrap: wrap;
@@ -343,14 +342,12 @@ body {
     gap: 30px;
   }
 
-  .footer-bottom {
+  .bottom {
     flex-direction: column;
     text-align: center;
     gap: 10px;
   }
 }
-
-/* Small Devices (Phones) */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -366,7 +363,7 @@ body {
     width: 100%;
   }
 
-  .navbar-icons {
+  .icons {
     align-self: flex-end;
     width: 100%;
     justify-content: flex-end;
@@ -393,35 +390,33 @@ body {
     height: 200px;
   }
 
-  .footer-left h2 {
+  .left h2 {
     font-size: 24px;
   }
 
-  .footer-left p {
+  .left p {
     font-size: 14px;
   }
 
-  .footer-contact h4,
-  .footer-contact p {
+  .contact h4,
+  .contact p {
     font-size: 14px;
   }
 
-  .footer-middle,
-  .footer-right {
+  .middle,
+  .right {
     min-width: 100%;
   }
 
-  .footer-middle ul li,
+  .middle ul li,
   .social-links a {
     font-size: 14px;
   }
 
-  .footer-bottom {
+  .bottom {
     font-size: 12px;
   }
 }
-
-/* Extra Small Devices (Very small phones) */
 @media (max-width: 480px) {
   .navbar {
     padding: 15px;
@@ -451,20 +446,20 @@ body {
     font-size: 18px;
   }
 
-  .footer-left h2 {
+  .left h2 {
     font-size: 20px;
   }
 
-  .footer-left p {
+  .left p {
     font-size: 13px;
   }
 
-  .footer-contact h4,
-  .footer-contact p {
+  .contact h4,
+  .contact p {
     font-size: 13px;
   }
 
-  .footer-bottom {
+  .bottom {
     font-size: 11px;
   }
 }
