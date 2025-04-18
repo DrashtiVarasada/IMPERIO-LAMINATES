@@ -35,13 +35,6 @@ body {
   height: 100px;
   width: auto;
 }
-
-/* .subtext {
-  font-size: 10px;
-  letter-spacing: 2px;
-  color: #333;
-} */
-
 .navbar-menu ul {
   display: flex;
   list-style: none;
@@ -65,18 +58,18 @@ body {
   color: #a37b2e;
 }
 
-.navbar-icons {
+.icons {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.navbar-icons .fa-search {
+.icons .fa-search {
   font-size: 16px;
   color: #000;
   cursor: pointer;
 }
-.menu-circle {
+.circle {
   border: 1px solid #000;
   border-radius: 50%;
   padding: 10px;
@@ -88,13 +81,13 @@ body {
   cursor: pointer;
 }
 
-.menu-circle i {
+.circle i {
   font-size: 16px;
   color: #000;
 }
-.image_first{
+.img_first{
   height:auto;
-  width:200px;
+  width:1435px;
 }
 .container {
   display: flex;
@@ -294,72 +287,72 @@ button:hover {
   gap: 40px;
 }
 
-.footer-left {
+.left {
   flex: 2;
   min-width: 300px;
 }
 
-.footer-left h2 {
+.left h2 {
   color: #fff;
   font-size: 32px;
   margin-bottom: 20px;
 }
 
-.footer-left h2 span {
+.left h2 span {
   color: #fff;
   font-weight: 700;
 }
 
-.footer-left p {
+.left p {
   max-width: 500px;
   line-height: 1.6;
   margin-bottom: 30px;
   color: #aaa;
 }
 
-.footer-contact {
+.contact {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
 
-.footer-contact h4 {
+.contact h4 {
   color: #fff;
   margin-bottom: 5px;
 }
 
-.footer-contact p {
+.contact p {
   color: #ccc;
   font-weight: 500;
 }
 
-.footer-middle, .footer-right {
+.middle, .right {
   flex: 1;
   min-width: 200px;
 }
 
-.footer-middle h4,
-.footer-right h4 {
+.middle h4,
+.right h4 {
   color: #fff;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.footer-middle ul {
+.middle ul {
   list-style: none;
 }
 
-.footer-middle ul li {
+.middle ul li {
   margin-bottom: 10px;
 }
 
-.footer-middle ul li a {
+.middle ul li a {
   color: #aaa;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.footer-middle ul li a:hover {
+.middle ul li a:hover {
   color: #fff;
 }
 
@@ -381,7 +374,7 @@ button:hover {
   color: #fff;
 }
 
-.footer-bottom {
+.bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -393,7 +386,114 @@ button:hover {
   color: #aaa;
 }
 
-.footer-bottom strong {
+.bottom strong {
   color: #fff;
 }
-  
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .navbar-menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .icons {
+    margin-top: 15px;
+  }
+
+  .img_first {
+    width: 100%;
+  }
+
+  .container, .contact-section, .footer-container {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-heading {
+    font-size: 32px;
+  }
+
+  .description, .contact-right p, .contact-left h1 {
+    font-size: 16px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .values-box {
+    position: relative;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-logo img {
+    height: 70px;
+  }
+
+  .navbar-menu a {
+    font-size: 13px;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+
+  .main-heading {
+    font-size: 24px;
+  }
+
+  .contact-left h1 {
+    font-size: 28px;
+  }
+
+  .contact-form {
+    height: auto;
+  }
+
+  .contact-item h3 {
+    font-size: 16px;
+  }
+
+  .contact-section {
+    padding: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .footer {
+    padding: 40px 20px 20px;
+  }
+
+  .footer-container {
+    gap: 20px;
+  }
+
+  .bottom {
+    font-size: 12px;
+  }
+}
