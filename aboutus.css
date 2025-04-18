@@ -36,6 +36,7 @@ body {
     list-style: none;
     gap: 30px; 
   }
+  
   .navbar-menu a {
     text-decoration: none;
     font-weight: bold;
@@ -43,24 +44,28 @@ body {
     transition: color 0.3s ease;
     font-size: 15px;
   }
+  
   .navbar-menu a i {
     font-size: 12px;
     margin-left: 5px;
   }
+  
   .navbar-menu a:hover {
     color: #a37b2e;
   }
-  .navbar-icons {
+  
+  .icons {
     display: flex;
     align-items: center;
     gap: 20px;
   }
-  .navbar-icons .fa-search {
+  
+  .icons .fa-search {
     font-size: 16px;
     color: #000;
     cursor: pointer;
   }
-  .menu-circle {
+  .circle {
     border: 1px solid #000;
     border-radius: 50%;
     padding: 10px;
@@ -71,7 +76,8 @@ body {
     align-items: center;
     cursor: pointer;
   }
-  .menu-circle i {
+  
+  .circle i {
     font-size: 16px;
     color: #000;
   }
@@ -79,6 +85,7 @@ body {
     display: flex;
     padding: 20px;
   }
+  
   .sidebar {
     width: auto;
     padding-right: auto;
@@ -100,13 +107,15 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
   }
+  
   .sidebar ul {
     list-style-type: none;
-    padding: 0;
   }
+  
   .sidebar ul li {
     font-size: 25px;
     margin-bottom: 15px;
+    
   }
   .sidebar1 a{
     text-decoration: none;
@@ -177,72 +186,72 @@ body {
     gap: 40px;
   }
   
-  .footer-left {
+  .left {
     flex: 2;
     min-width: 300px;
   }
   
-  .footer-left h2 {
+  .left h2 {
     color: #fff;
     font-size: 32px;
     margin-bottom: 20px;
   }
   
-  .footer-left h2 span {
+  .left h2 span {
     color: #fff;
     font-weight: 700;
   }
   
-  .footer-left p {
+  .left p {
     max-width: 500px;
     line-height: 1.6;
     margin-bottom: 30px;
     color: #aaa;
   }
   
-  .footer-contact {
+  .contact {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
   }
   
-  .footer-contact h4 {
+  .contact h4 {
     color: #fff;
     margin-bottom: 5px;
   }
   
-  .footer-contact p {
+  .contact p {
     color: #ccc;
     font-weight: 500;
   }
   
-  .footer-middle, .footer-right {
+  .middle, .right {
     flex: 1;
     min-width: 200px;
   }
   
-  .footer-middle h4,
-  .footer-right h4 {
+  .middle h4,
+  .right h4 {
     color: #fff;
     font-weight: 700;
     margin-bottom: 15px;
   }
   
-  .footer-middle ul {
+  .middle ul {
     list-style: none;
   }
   
-  .footer-middle ul li {
+  .middle ul li {
     margin-bottom: 10px;
   }
   
-  .footer-middle ul li a {
+  .middle ul li a {
     color: #aaa;
     text-decoration: none;
     transition: color 0.3s;
   }
   
-  .footer-middle ul li a:hover {
+  .middle ul li a:hover {
     color: #fff;
   }
   
@@ -264,7 +273,7 @@ body {
     color: #fff;
   }
   
-  .footer-bottom {
+  .bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -276,6 +285,139 @@ body {
     color: #aaa;
   }
   
-  .footer-bottom strong {
+  .bottom strong {
     color: #fff;
+  }
+  @media (max-width: 1024px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .navbar-menu ul {
+      flex-direction: column;
+      gap: 15px;
+      padding-top: 15px;
+    }
+  
+    .icons {
+      margin-top: 15px;
+    }
+  
+    .footer-container {
+      gap: 30px;
+    }
+  
+    .contact {
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-logo img {
+      height: 80px;
+    }
+  
+    .navbar-menu ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .navbar {
+      padding: 20px;
+    }
+  
+    .sidebar h1 {
+      font-size: 28px;
+    }
+  
+    .sidebar h2 {
+      font-size: 18px;
+    }
+  
+    .sidebar ul li {
+      font-size: 20px;
+    }
+  
+    .company-div {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+  
+    .card1 {
+      height: 200px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .left h2 {
+      font-size: 26px;
+    }
+  
+    .contact {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .bottom {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 15px;
+    }
+  
+    .navbar-logo img {
+      height: 60px;
+    }
+  
+    .circle {
+      width: 35px;
+      height: 35px;
+      padding: 8px;
+    }
+  
+    .circle i {
+      font-size: 14px;
+    }
+  
+    .sidebar h1 {
+      font-size: 24px;
+    }
+  
+    .sidebar ul li {
+      font-size: 18px;
+    }
+  
+    .card1 {
+      height: 180px;
+    }
+  
+    .label {
+      font-size: 16px;
+    }
+  
+    .left h2 {
+      font-size: 22px;
+    }
+  
+    .contact h4 {
+      font-size: 14px;
+    }
+  
+    .contact p {
+      font-size: 14px;
+    }
+  
+    .bottom {
+      font-size: 13px;
+    }
   }
