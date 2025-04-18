@@ -35,13 +35,6 @@ body {
   height: 100px;
   width: auto;
 }
-
-/* .subtext {
-  font-size: 10px;
-  letter-spacing: 2px;
-  color: #333;
-} */
-
 .navbar-menu ul {
   display: flex;
   list-style: none;
@@ -65,19 +58,19 @@ body {
   color: #a37b2e;
 }
 
-.navbar-icons {
+.icons {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.navbar-icons .fa-search {
+.icons .fa-search {
   font-size: 16px;
   color: #000;
   cursor: pointer;
 }
   
-  .menu-circle {
+  .circle {
     border: 1px solid #000;
     border-radius: 50%;
     padding: 10px;
@@ -89,7 +82,7 @@ body {
     cursor: pointer;
   }
   
-  .menu-circle i {
+  .circle i {
     font-size: 16px;
     color: #000;
   }
@@ -169,8 +162,6 @@ body {
   margin: auto;
   flex: 1;
 }
-
-
 .img_zoom img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10px; 
@@ -230,7 +221,7 @@ body {
    width:100%; 
    
 }
-.catalogue-section {
+.catalogue{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -239,7 +230,6 @@ body {
   background-color: #f8f8f8;
   position: relative;
 }
-
 .catalogue-content {
   flex: 1;
   min-width: 300px;
@@ -247,7 +237,7 @@ body {
   z-index: 2;
 }
 
-.subtitle {
+.catalogue-subtitle {
   text-transform: uppercase;
   font-weight: 600;
   color: #555;
@@ -264,14 +254,12 @@ body {
   margin-bottom: 20px;
   color: #111;
 }
-
 .catalogue-description {
   font-size: 16px;
   color: #333;
   line-height: 1.7;
   margin-bottom: 30px;
 }
-
 .catalogue-button {
   background-color: #e6e6e6;
   border: none;
@@ -282,11 +270,9 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
 }
-
 .catalogue-button span {
   margin-left: 8px;
 }
-
 .catalogue-image {
   flex: 1;
   min-width: 300px;
@@ -295,14 +281,13 @@ body {
   justify-content: flex-end;
   opacity: 0.15;
 }
-
 .catalogue-image img {
   width: 100%;
   max-width: 400px;
   height: auto;
 }
 
-.vr-layout {
+.grid1{
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #111;
@@ -314,8 +299,7 @@ body {
   padding-top: 50px;
   padding-left: 150px;
 }
-
-.vr-box {
+.grid-box {
   background-color: #1c1c1c;
   padding: 20px;
   display: flex;
@@ -340,7 +324,7 @@ body {
   background-color: #000;
 }
 
-.vr-image {
+.v-image {
   grid-column: 2 / 3;
   grid-row: 2;
 }
@@ -352,20 +336,19 @@ body {
   text-align: left;
   padding: 30px;
 }
-
-.vr-scene {
+.v-video {
   grid-column: 3 / 5;
   grid-row: 1 / 3;
-  padding: 0;
   width: 90%;
+  padding: 0%;
 }
-
-.vr-img {
+.v-img {
   max-width: 100%;
-  height: auto;
+  height: 350px;
   display: block;
+  width: 350px;
 }
-.vr-video {
+.v-video1 {
   width: 100%;
   height: auto;
   display: block;
@@ -394,93 +377,93 @@ body {
 .pic1{
     align-items: right;
     padding-right: 70px;
-    
 }
-.vision2{
+.vision1{
     position: relative;
     padding-left: 130px;
     padding-right: 100px;
     font-size:20px;
 }
+
 .footer {
   background-color: #121212;
   color: #ccc;
   padding: 60px 40px 30px;
 }
 
-.footer-container {
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px;
 }
 
-.footer-left {
+.left {
   flex: 2;
   min-width: 300px;
 }
 
-.footer-left h2 {
+.left h2 {
   color: #fff;
   font-size: 32px;
   margin-bottom: 20px;
 }
 
-.footer-left h2 span {
+.left h2 span {
   color: #fff;
   font-weight: 700;
 }
 
-.footer-left p {
+.left p {
   max-width: 500px;
   line-height: 1.6;
   margin-bottom: 30px;
   color: #aaa;
 }
 
-.footer-contact {
+.contact {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
 
-.footer-contact h4 {
+.contact h4 {
   color: #fff;
   margin-bottom: 5px;
 }
 
-.footer-contact p {
+.contact p {
   color: #ccc;
   font-weight: 500;
 }
 
-.footer-middle, .footer-right {
+.middle, .right {
   flex: 1;
   min-width: 200px;
 }
 
-.footer-middle h4,
-.footer-right h4 {
+.middle h4,
+.right h4 {
   color: #fff;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.footer-middle ul {
+.middle ul {
   list-style: none;
 }
 
-.footer-middle ul li {
+.middle ul li {
   margin-bottom: 10px;
 }
 
-.footer-middle ul li a {
+.middle ul li a {
   color: #aaa;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.footer-middle ul li a:hover {
+.middle ul li a:hover {
   color: #fff;
 }
 
@@ -502,7 +485,7 @@ body {
   color: #fff;
 }
 
-.footer-bottom {
+.bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -514,22 +497,23 @@ body {
   color: #aaa;
 }
 
-.footer-bottom strong {
+.bottom strong {
   color: #fff;
 }
 @media (max-width: 1200px) {
-  .box {
-    width: 30%;
+  .catalogue {
+    flex-direction: column;
+    padding: 40px 20px;
   }
-  .vr-layout {
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: 50px;
+
+  .catalogue-content, .catalogue-image {
+    max-width: 100%;
+    text-align: center;
   }
-  .vr-scene {
-    grid-column: 1 / 3;
-  }
-  .description, .title, .degree360, .vr-image {
-    grid-column: span 1;
+
+  .catalogue-image {
+    justify-content: center;
+    margin-top: 20px;
   }
 }
 
@@ -537,238 +521,190 @@ body {
   .navbar {
     flex-direction: column;
     height: auto;
-    padding: 15px;
-    text-align: center;
+    padding: 10px 20px;
   }
 
-  .navbar-menu ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .navbar-icons {
-    margin-top: 10px;
-  }
-
-  .container {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .laminate-section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .box {
-    width: 80%;
-  }
-
-  .footer-container {
-    flex-direction: column;
-  }
-
-  .sheet-supplier, .vision2, .pic, .pic1 {
-    flex-direction: column;
-    padding: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .vr-layout {
-    display: block;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .vr-box {
-    margin-bottom: 20px;
-  }
-  .catalogue_container {
-    flex-direction: column;
-    height: auto;
-  }
-  .footer-bottom {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
-@media (max-width: 576px) {
   .navbar-logo img {
     height: 70px;
   }
-  .header-line {
-    flex-direction: column;
-    text-align: center;
-    height: auto;
-  }
-  .left h1 {
-    font-size: 28px;
-  }
-  .right {
-    font-size: 14px;
-  }
-  .box {
-    width: 100%;
-  }
-  .img_first {
-    height: auto;
-  }
-}
-/* @media (max-width: 991px) {
-  .navbar {
-    flex-direction: column;
-    height: auto;
-    padding: 15px 20px;
-  }
 
   .navbar-menu ul {
     flex-direction: column;
-    gap: 15px;
-    text-align: center;
+    gap: 10px;
     padding-top: 10px;
   }
 
-  .navbar-icons {
-    margin-top: 10px;
-    justify-content: center;
-  }
-
-  .header-line {
+  .img_container {
     flex-direction: column;
-    height: auto;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .left, .right {
-    max-width: 100%;
-    padding: 10px;
-  }
-
-  .laminate-section {
-    justify-content: center;
   }
 
   .box {
     width: 45%;
   }
 
-  .catalogue-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .catalogue-content,
-  .catalogue-image {
-    max-width: 100%;
-  }
-
-  .catalogue-image {
-    justify-content: center;
-    margin-top: 30px;
-  }
-
-  .vr-layout {
+  .grid1 {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding-left: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
-  .title,
-  .description,
-  .degree360,
-  .vr-image,
-  .vr-scene {
-    grid-column: 1 / -1;
+  .v-video {
+    grid-column: 1;
+    grid-row: auto;
     width: 100%;
   }
 
   .sheet-supplier {
     flex-direction: column;
     text-align: center;
+    padding: 40px 20px;
   }
 
-  .pic, .pic1, .vision, .vision2 {
-    padding: 20px;
+  .pic, .vision, .pic1, .vision1 {
+    padding: 0;
   }
 
-  .footer-container {
+  .footer .container {
     flex-direction: column;
-    align-items: center;
+    gap: 30px;
+  }
+
+  .left, .middle, .right {
+    max-width: 100%;
     text-align: center;
   }
 
-  .footer-contact {
-    justify-content: center;
+  .contact {
+    flex-direction: column;
+  }
+  .grid1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 30px 20px;
   }
 
-  .footer-bottom {
+  .grid-box {
     flex-direction: column;
-    gap: 10px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .v-video {
+    grid-column: 1;
+    grid-row: auto;
+    width: 100%;
+  }
+
+  .v-video1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .v-img {
+    width: 100%;
+    height: auto;
+  }
+  .sheet-supplier {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .pic,
+  .pic1 {
+    padding: 0;
+    width: 100%;
+  }
+
+  .pic img,
+  .pic1 img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+
+  .vision,
+  .vision1 {
+    padding: 20px;
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .box {
+    width: 100%;
+  }
 
-@media (max-width: 600px) {
-  .navbar-menu ul {
-    gap: 10px;
+  .img_zoom img {
+    width: 90%;
+    height: auto;
   }
 
   .catalogue-heading {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .catalogue-description {
     font-size: 14px;
   }
 
-  .catalogue-button {
-    padding: 10px 18px;
-    font-size: 13px;
+  .grid1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
   }
 
-  .box {
-    width: 90%;
+  .navbar-logo img {
+    height: 50px;
   }
 
-  .footer-left h2 {
-    font-size: 24px;
-  }
-
-  .footer-left p,
-  .footer-contact p {
+  .navbar-menu ul {
+    gap: 5px;
     font-size: 14px;
   }
 
-  .footer-middle h4,
-  .footer-right h4 {
+  .catalogue-button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  .footer {
+    padding: 40px 20px 20px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .grid1 {
+    padding: 20px 10px;
+  }
+  .title p {
+    font-size: 18px;
+  }
+  .degree360 img {
+    width: 100px;
+    height: auto;
+  }
+  .description p {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .vision1 {
     font-size: 16px;
   }
-
-  .social-links a i {
-    font-size: 16px;
+  .vision h3 {
+    font-size: 20px;
   }
-
-  .title {
-    font-size: 22px;
+  .vision h1 {
+    font-size: 32px;
   }
-
-  .degree360 {
-    font-size: 30px;
-  }
-
-  .description {
-    font-size: 16px;
-  }
-
-  .vr-video {
-    height: 200px;
-  }
-} */
+}
