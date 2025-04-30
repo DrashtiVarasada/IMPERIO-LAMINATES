@@ -164,21 +164,6 @@ body {
   margin: 0 auto;
 }
 
-.experience-number {
-  font-size: 160px;
-  font-weight: bold;
-  color: transparent;
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.experience-caption {
-  margin-top: -10px;
-  letter-spacing: 3px;
-  color: #bbb;
-  font-weight: 600;
-}
 .footer {
   background-color: #121212;
   color: #ccc;
