@@ -93,16 +93,6 @@ body {
   object-fit: cover;
   display: block;
 }
-.specificstion{
-  background: linear-gradient(to right, #e8e4e4, #f8f6f3);
-  text-align: center;
-}
-.specificstion h1{
-  font-family: Arial, Gadget, sans-serif;
-  font-size: 50px; 
-  padding-top: 50px;
-  
-}
 .property {
   font-family: Arial, sans-serif;
   background-color: #fff;
@@ -125,12 +115,6 @@ body {
   padding: 15px;
   vertical-align: top;
   text-align: center;
-}
-
-
-.property-table td:last-child {
-  text-align: center;
-  font-size: 1.2em;
 }
 
 .property-table tr:nth-child(even) {
