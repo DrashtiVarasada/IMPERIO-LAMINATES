@@ -270,20 +270,6 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
 }
-.catalogue-image {
-  flex: 1;
-  min-width: 300px;
-  max-width: 40%;
-  display: flex;
-  justify-content: flex-end;
-  opacity: 0.15;
-}
-.catalogue-image img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
-
 .grid1{
   margin: 0;
   font-family: Arial, sans-serif;
