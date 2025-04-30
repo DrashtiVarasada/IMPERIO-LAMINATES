@@ -189,7 +189,7 @@ font-weight: bolder;
 }
 
 .warranty-left ul {
-  list-style-type: "➩ ";
+  list-style-type: disc;
   padding-left: 20px;
   line-height: 1.8;
 }
