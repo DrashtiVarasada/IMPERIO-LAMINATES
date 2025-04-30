@@ -153,21 +153,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
 
   }
-  .sidebar1::after{
-    content: ' ';
-    height: 2px;
-    width: 0%;
-    background-color: #000;
-    display: block;
-    transition: .3s ease-in-out;
-  }
-  .sidebar1:hover::after{
-    content: ' ';
-    height: 2px;
-    width: 100%;
-    background-color: #000;
-    display: block;
-  }
   .card1 {
     position: relative;
     background-size: cover;
