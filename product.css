@@ -220,11 +220,6 @@ font-weight: bolder;
   object-fit: cover;
 }
 
-.img-block p {
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
 .footer {
   background-color: #121212;
   color: #ccc;
